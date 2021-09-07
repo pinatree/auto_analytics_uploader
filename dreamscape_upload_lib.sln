@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoAnalytics.Upload.Cmd", "dreamscape_upload_lib\AutoAnalytics.Upload.Cmd.csproj", "{8DD1BA8B-5FC3-4DE6-B17D-7FB6F8378189}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoAnalytics.Upload.ExcelReader", "AutoAnalytics.Upload.ExcelParser\AutoAnalytics.Upload.ExcelReader.csproj", "{DFB0979C-ADBF-4968-80CE-E71A519064B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoAnalytics.Upload.ExcelReader.Model", "AutoAnalytics.Upload.Models\AutoAnalytics.Upload.ExcelReader.Model.csproj", "{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoAnalytics.Upload.PostgresConnector", "AutoAnalytics.Upload.PostgresUploader\AutoAnalytics.Upload.PostgresConnector.csproj", "{0066CCD3-49F1-4EA9-A639-D53B9A67A7FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExcelReader", "ExcelReader", "{B7AAE6C6-1EAE-4C46-A758-E8AA18CD3076}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoAnalytics.Upload.Uploader", "AutoAnalytics.Upload.Uploader\AutoAnalytics.Upload.Uploader.csproj", "{12845F1E-7A06-4852-95FB-DF31DE8D0BB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DD1BA8B-5FC3-4DE6-B17D-7FB6F8378189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD1BA8B-5FC3-4DE6-B17D-7FB6F8378189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD1BA8B-5FC3-4DE6-B17D-7FB6F8378189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD1BA8B-5FC3-4DE6-B17D-7FB6F8378189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB0979C-ADBF-4968-80CE-E71A519064B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB0979C-ADBF-4968-80CE-E71A519064B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB0979C-ADBF-4968-80CE-E71A519064B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB0979C-ADBF-4968-80CE-E71A519064B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0066CCD3-49F1-4EA9-A639-D53B9A67A7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0066CCD3-49F1-4EA9-A639-D53B9A67A7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0066CCD3-49F1-4EA9-A639-D53B9A67A7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0066CCD3-49F1-4EA9-A639-D53B9A67A7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12845F1E-7A06-4852-95FB-DF31DE8D0BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12845F1E-7A06-4852-95FB-DF31DE8D0BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12845F1E-7A06-4852-95FB-DF31DE8D0BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12845F1E-7A06-4852-95FB-DF31DE8D0BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFB0979C-ADBF-4968-80CE-E71A519064B9} = {B7AAE6C6-1EAE-4C46-A758-E8AA18CD3076}
+		{EA4C5AA4-E5F9-4BCC-8521-84AF97B50E76} = {B7AAE6C6-1EAE-4C46-A758-E8AA18CD3076}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19BB99CE-7AC8-4237-A8D7-8767837294CE}
+	EndGlobalSection
+EndGlobal
