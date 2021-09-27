@@ -11,9 +11,9 @@ namespace AutoAnalytics.Upload.PostgresConnector
     {
         private dreamscape_portal_dbContext _dbContext;
 
-        public PgConnector()
+        public PgConnector(string connStr)
         {
-            _dbContext = new dreamscape_portal_dbContext();
+            _dbContext = new dreamscape_portal_dbContext(connStr);
         }
 
         public TGroup FillGroupId(TGroup group)

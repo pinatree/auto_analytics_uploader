@@ -7,7 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AutoAnalytics.Upload.ExcelParser\AutoAnalytics.Upload.ExcelReader.csproj" />
     <ProjectReference Include="..\AutoAnalytics.Upload.Models\AutoAnalytics.Upload.ExcelReader.Model.csproj" />
-    <ProjectReference Include="..\AutoAnalytics.Upload.PostgresUploader\AutoAnalytics.Upload.PostgresConnector.csproj" />
+    <ProjectReference Include="..\AutoAnalytics.Upload.PostgresUploader\AutoAnalytics.DbUpload.DataUpload.PostgreSQL.csproj" />
   </ItemGroup>
 
 </Project>

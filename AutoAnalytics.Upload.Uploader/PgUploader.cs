@@ -11,6 +11,13 @@ namespace AutoAnalytics.Upload.Uploader
 {
     public class PgUploader
     {
+        private string _connStr;
+
+        public PgUploader(string connStr)
+        {
+            this._connStr = connStr;
+        }
+
         public List<BreakdownInfo> Read(string path)
         {
             return ExcelReader.ExcelReader.Read(path).ToList();
@@ -18,7 +25,7 @@ namespace AutoAnalytics.Upload.Uploader
 
         public List<TGroup> UploadGroups(List<TGroup> groups)
         {
-            var pgConnector = new PgConnector();
+            var pgConnector = new PgConnector(_connStr);
 
             var result = new List<TGroup>();
 
@@ -33,7 +40,7 @@ namespace AutoAnalytics.Upload.Uploader
 
         public List<TSubgroup> UploadSubgroups(List<TSubgroup> subgroups)
         {
-            var pgConnector = new PgConnector();
+            var pgConnector = new PgConnector(_connStr);
 
             var result = new List<TSubgroup>();
 
@@ -48,7 +55,7 @@ namespace AutoAnalytics.Upload.Uploader
 
         public List<TDetail> UploadDetails(List<TDetail> details)
         {
-            var pgConnector = new PgConnector();
+            var pgConnector = new PgConnector(_connStr);
 
             var result = new List<TDetail>();
 
@@ -140,7 +147,7 @@ namespace AutoAnalytics.Upload.Uploader
                     DetailName = x.DetailName
                 }).ToList();
             
-            var pgConnector = new PgConnector();
+            var pgConnector = new PgConnector(_connStr);
 
             var result = new List<TCrash>();
 

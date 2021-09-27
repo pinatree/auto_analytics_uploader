@@ -6,7 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoAnalytics.Upload.Uploader\AutoAnalytics.Upload.Uploader.csproj" />
+    <PackageReference Include="Accord" Version="3.8.0" />
+    <PackageReference Include="Accord.MachineLearning" Version="3.8.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAnalytics.Upload.Uploader\AutoAnalytics.DbUpload.DataTransfer.csproj" />
   </ItemGroup>
 
 </Project>

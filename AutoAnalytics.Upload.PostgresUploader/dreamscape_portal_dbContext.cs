@@ -8,8 +8,15 @@ namespace AutoAnalytics.Upload.PostgresConnector
 {
     public partial class dreamscape_portal_dbContext : DbContext
     {
+        //empty constuctor for ef migration tools
         public dreamscape_portal_dbContext()
         {
+
+        }
+
+        public dreamscape_portal_dbContext(string connStr)
+        {
+            this.Database.SetConnectionString(connStr);
         }
 
         public dreamscape_portal_dbContext(DbContextOptions<dreamscape_portal_dbContext> options)
@@ -30,7 +37,7 @@ namespace AutoAnalytics.Upload.PostgresConnector
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseNpgsql("Host=192.168.0.108;Database=dreamscape_portal_db;Username=postgres;Password=qwe1");
+                optionsBuilder.UseNpgsql("Host=192.168.0.107;Database=auto_analytics_db;Username=postgres;Password=qwe1");
             }
         }
 

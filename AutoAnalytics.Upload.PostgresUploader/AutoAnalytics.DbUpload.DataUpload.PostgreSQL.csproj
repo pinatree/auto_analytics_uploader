@@ -17,8 +17,4 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AutoAnalytics.Upload.Models\AutoAnalytics.Upload.ExcelReader.Model.csproj" />
-  </ItemGroup>
-
 </Project>
